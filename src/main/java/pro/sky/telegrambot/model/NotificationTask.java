@@ -20,15 +20,13 @@ public class NotificationTask {
 
     private LocalDateTime notificationDateTime;
 
-    public NotificationTask(Long id, Long chatId, String massage, LocalDateTime notificationDateTime) {
-        this.id = id;
+    public NotificationTask(Long chatId, String massage, LocalDateTime notificationDateTime) {
         this.chatId = chatId;
         this.massage = massage;
         this.notificationDateTime = notificationDateTime;
     }
 
     public NotificationTask() {
-
     }
 
     public Long getId() {
